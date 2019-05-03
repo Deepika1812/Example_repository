@@ -1,3 +1,2 @@
 File before making changes
-This is demo
 File after making changes
