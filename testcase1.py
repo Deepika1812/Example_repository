@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import unittest
+>>>>>>> 87693134eda0d36aa23e54ccf26948d63fecce16
 def add(num1,num2):
 	return num1+num2
 def mul(num1,num2):
