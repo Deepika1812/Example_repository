@@ -1,3 +1,11 @@
+import unittest
+from TestlinkRunner import TestLinkRunner
+class demonstratingTLRunner(unittest.TestCase):
+    def test_20_TestPass(self):
+        pass
+    
+    def test_23_TestFailure(self):
+        self.fail("test fail")
 def add(num1,num2):
 	return num1+num2
 def mul(num1,num2):
