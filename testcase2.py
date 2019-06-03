@@ -1,20 +1,20 @@
 import unittest
-from TestlinkRunner import TestLinkRunner
+from TestLinkRunner import TestLinkRunner
 class demonstratingTLRunner(unittest.TestCase):
-    def test_20_TestPass(self):
+    def test_11_TestPass(self):
         pass
-    
-    def test_23_TestFailure(self):
+    def test_4_TestPass(self):
+        pass
+    def test_15_TestPass(self):
+        pass
+    def test_19_TestPass(self):
+        pass
+    def test_21_TestPass(self):
+        pass
+    def test_23_TestPass(self):
         self.fail("test fail")
-def add(num1,num2):
-	return num1+num2
-def mul(num1,num2):
-	return num1*num2
-def sub(num1,num2):
-	return num1-num2
-def test_add():
-	assert add(1,2)==3
-def test_mul():
-	assert mul(3,4)==12
-def test_sub():
-	assert sub(3,3)==0
+testlinkURL = "http://localhost:8004/TestLink/lib/api/xmlrpc/v1/xmlrpc.php"
+userKey = "4a975fb7ea42cdc39833c1504d3e4776"
+suite = unittest.TestLoader().loadTestsFromTestCase(demonstratingTLRunner)
+runner = TestLinkRunner(testlinkURL,userKey,_testPlanId=2,_buildName="MyFirstBuild")
+runner.run(suite)
